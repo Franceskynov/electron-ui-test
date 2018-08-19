@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test ui app</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <div class="window">
+    <header class="top-bar">
+      <div class="btn-group">
+        <button class="btn btn-prev">
+          <div class="fa fa-chevron-left"></div>
+        </button>
+        <button class="btn btn-next" disabled="disabled">
+          <div class="fa fa-chevron-right"></div>
+        </button>
+      </div>
+      <div class="btn-group">
+        <button class="btn">
+          <div class="fa fa-home"></div>
+          <span>Home</span>
+        </button>
+        <button class="btn">
+          <span>Project</span>
+        </button>
+        <button class="btn active">
+          <span>Freaked</span>
+        </button>
+      </div>
+      <div class="separator"></div>
+      
+      <div class="btn-group">
+        <button class="btn fa fa-chevron-down" id="btnMin"></button>
+        <button class="btn fa fa-window-restore" id="btnRestore"></button>
+        <button class="btn fa fa-times" id="btnClose"></button>
+      </div>  
+    </header>
+
+    <div class="content">
+      <div class="sidebar">
+        <ul class="places">
+          <h4 class="places-section-title">Public</h4>
+          <li class="places-item">
+            <a href="#">
+              <div class="fa fa-clock-o"></div>
+              <span>Recents</span>
+            </a>
+          </li>
+          <li class="places-item">
+            <a href="#">
+              <div class="fa fa-home">
+                <span>Home</span>
+              </div>
+            </a>
+          </li>
+          <li class="places-item">
+            <a href="#">
+              <div class="fa fa-download">
+                <span>Downloads</span>
+              </div>
+            </a>
+          </li>
+          <li class="places-item">
+            <a href="#">
+              <div class="fa fa-file">
+                <span>Documents</span>
+              </div>
+            </a>
+          </li>
+          <li class="places-item">
+            <a href="#">
+              <div class="fa fa-camera">
+                <span>Images</span>
+              </div>
+            </a>
+          </li>
+          <li class="places-item">
+            <a href="#">
+              <div class="fa fa-music">
+                <span>Music</span>
+              </div>
+            </a>
+          </li>
+          <li class="places-item">
+            <a href="#">
+              <div class="fa fa-video-camera">
+                <span>Videos</span>
+              </div>
+            </a>
+          </li>
+          <li class="places-item">
+            <a href="#">
+              <div class="fa fa-trash-o">
+                <span>Trash</span>
+              </div>
+            </a>
+          </li>
+          <h4 class="places-section-title">Devices</h4>
+          <li class="places-item">
+            <a href="#">
+              <div class="fa fa-hdd-o"></div>
+              <span>HDD</span>
+            </a>
+            <a href="#">
+              <div class="fa fa-flash"></div>
+              <span>USB 32GB</span>
+            </a>
+          </li>
+          <h4 class="places-section-title">Network</h4>
+          <li class="places-item">
+            <a href="#">
+              <div class="fa fa-sitemap"></div>
+              <span>PC 1</span>
+            </a>
+          </li>
+          <li class="places-item">
+            <a href="#">
+              <div class="fa fa-sitemap"></div>
+              <span>PC 2</span>
+            </a>
+          </li>
+        </ul>
+        <div class="resizer"></div>
+      </div>
+      <div class="file-view"></div>
+    </div>
+  </div>
+  <script src="./assets/scripts/script.js"></script>
+</body>
+
+</html>

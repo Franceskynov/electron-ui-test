@@ -1,0 +1,25 @@
+{
+    "name": "electron-ui-test",
+    "version": "0.1.0",
+    "main": "main.js",
+    "description": "electron ui test",
+    "dependencies": {
+        "electron": "^2.0.7",
+        "electron-packager": "^12.1.1",
+        "font-awesome": "^4.7.0"
+    },
+    "devDependencies": {
+        "electron-winstaller": "^2.6.4"
+    },
+    "build": {
+        "appId": "MyCompany.com.TestUi",
+        "mac": {
+          "category": "MyCompany.com.TestUi"
+        }
+    },
+    "scripts": {
+        "electron":"./node_modules/.bin/electron .",
+        "buildWin": "electron-packager . electron-ui-test --overwrite --asar=true --platform=win32 --arch=ia32 --icon=src/assets/img/icon.ico --prune=true --out=release-builds --version-string.CompanyName='My company' --version-string.FileDescription='Ui test Installer' --version-string.ProductName='Electron ui test'",
+        "packager": "node packager.js"
+    }
+}
